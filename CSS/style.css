@@ -1,0 +1,544 @@
+:root {
+  --color-blue: #0078ff;
+}
+.bg-blue {
+  background-color: #0078ff;
+}
+.text-blue {
+  color: #0078ff;
+}
+/* Deep Dropdown positioning */
+.dropdown-submenu {
+  position: relative;
+}
+
+.dropdown-submenu .dropdown-menu {
+  top: 0;
+  right: 100%;
+  margin-top: -1px;
+  display: none;
+  position: absolute;
+  z-index: 1000;
+}
+
+.dropdown-submenu.show .dropdown-menu {
+  display: block;
+}
+
+#hero {
+  background-image: url(../image/hero-bg.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.nav-link {
+  transition: 0.5s;
+}
+.hero-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  position: absolute;
+}
+#hero .container {
+  position: relative;
+  z-index: 2;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+h1 {
+  font-size: 72px;
+}
+.typing::after {
+  content: "D|";
+  animation: typing 6s infinite;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  margin-left: 5px;
+  line-height: 60px;
+}
+
+@keyframes typing {
+  /* Typing: "Developer" (1-10%) */
+  1% {
+    content: "D|";
+  }
+  2% {
+    content: "De|";
+  }
+  3% {
+    content: "Dev|";
+  }
+  4% {
+    content: "Deve|";
+  }
+  5% {
+    content: "Devel|";
+  }
+  6% {
+    content: "Develo|";
+  }
+  7% {
+    content: "Develop|";
+  }
+  8% {
+    content: "Develope|";
+  }
+  9% {
+    content: "Developer|";
+  }
+
+  /* Deleting "Developer" (11-18%) */
+  11% {
+    content: "Develope|";
+  }
+  12% {
+    content: "Develop|";
+  }
+  13% {
+    content: "Develo|";
+  }
+  14% {
+    content: "Devel|";
+  }
+  15% {
+    content: "Deve|";
+  }
+  16% {
+    content: "Dev|";
+  }
+  17% {
+    content: "De|";
+  }
+
+  /* Typing: "Designer" (19-27%) */
+  21% {
+    content: "Des|";
+  }
+  22% {
+    content: "Desi|";
+  }
+  23% {
+    content: "Desig|";
+  }
+  24% {
+    content: "Design|";
+  }
+  25% {
+    content: "Designe|";
+  }
+  26% {
+    content: "Designer|";
+  }
+  27% {
+    content: "Designer|";
+  }
+
+  /* Deleting "Designer" (28-35%) */
+  28% {
+    content: "Designe|";
+  }
+  29% {
+    content: "Design|";
+  }
+  30% {
+    content: "Desig|";
+  }
+  31% {
+    content: "Desi|";
+  }
+  32% {
+    content: "Des|";
+  }
+  33% {
+    content: "De|";
+  }
+  34% {
+    content: "D|";
+  }
+  35% {
+    content: "|";
+  }
+
+  /* Typing: "Freelancer" (36-46%) */
+  36% {
+    content: "F|";
+  }
+  37% {
+    content: "Fr|";
+  }
+  38% {
+    content: "Fre|";
+  }
+  39% {
+    content: "Free|";
+  }
+  40% {
+    content: "Freel|";
+  }
+  41% {
+    content: "Freela|";
+  }
+  42% {
+    content: "Freelan|";
+  }
+  43% {
+    content: "Freelanc|";
+  }
+  44% {
+    content: "Freelance|";
+  }
+  45% {
+    content: "Freelancer|";
+  }
+  46% {
+    content: "Freelancer|";
+  }
+
+  /* Deleting "Freelancer" (47-56%) */
+  47% {
+    content: "Freelance|";
+  }
+  48% {
+    content: "Freelanc|";
+  }
+  49% {
+    content: "Freelan|";
+  }
+  50% {
+    content: "Freela|";
+  }
+  51% {
+    content: "Freel|";
+  }
+  52% {
+    content: "Free|";
+  }
+  53% {
+    content: "Fre|";
+  }
+  54% {
+    content: "Fr|";
+  }
+  55% {
+    content: "F|";
+  }
+  56% {
+    content: "|";
+  }
+
+  /* Typing: "Photographer" (57-69%) */
+  57% {
+    content: "P|";
+  }
+  58% {
+    content: "Ph|";
+  }
+  59% {
+    content: "Pho|";
+  }
+  60% {
+    content: "Phot|";
+  }
+  61% {
+    content: "Photo|";
+  }
+  62% {
+    content: "Photog|";
+  }
+  63% {
+    content: "Photogr|";
+  }
+  64% {
+    content: "Photogra|";
+  }
+  65% {
+    content: "Photograp|";
+  }
+  66% {
+    content: "Photograph|";
+  }
+  67% {
+    content: "Photographe|";
+  }
+  68% {
+    content: "Photographer|";
+  }
+  69% {
+    content: "Photographer|";
+  }
+
+  /* Deleting "Photographer" (70-82%) */
+  70% {
+    content: "Photographe|";
+  }
+  73% {
+    content: "Photograph|";
+  }
+  76% {
+    content: "Photograp|";
+  }
+  79% {
+    content: "Photogra|";
+  }
+  82% {
+    content: "Photogr|";
+  }
+  85% {
+    content: "Photog|";
+  }
+  88% {
+    content: "Photo|";
+  }
+  91% {
+    content: "Phot|";
+  }
+  94% {
+    content: "Pho|";
+  }
+  97% {
+    content: "Ph|";
+  }
+  98% {
+    content: "P|";
+  }
+  99% {
+    content: "|";
+  }
+}
+.font-special {
+  font-size: 17.6px;
+  line-height: 26.4px;
+}
+.progress {
+  --bs-progress-border-radius: 0;
+}
+.heading {
+  position: relative;
+}
+.heading::after {
+  content: "";
+  height: 3px;
+  width: 100px;
+  background-color: #0078ff;
+  position: absolute;
+  top: 125%;
+  left: 0;
+}
+.font-special2 {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 300;
+  color: gray;
+}
+.font-special3 {
+  font-size: 48px;
+  line-height: 57.6px;
+  font-weight: 700;
+}
+.font-special4 {
+  font-size: 32px;
+  line-height: 48px;
+  font-weight: 400;
+}
+h3::after {
+  position: relative;
+  content: "";
+  height: 4px;
+  width: 40px;
+  background-color: #0078ff;
+  display: block;
+  top: 56px;
+  left: 48%;
+}
+nav {
+  background-color: rgba(0, 0, 0, 0.5);
+  .nav-item {
+    position: relative;
+    transition: 300ms;
+  }
+
+  .nav-link {
+    position: relative;
+    display: inline-block;
+  }
+
+  .nav-link::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0;
+    background-color: white;
+    bottom: 0;
+    left: 0;
+    border-radius: 1px;
+    transition: width 300ms ease-in-out;
+  }
+
+  .nav-item:hover .nav-link::after {
+    width: 80%;
+  }
+  .nav-link.active::after {
+    width: 80%;
+  }
+}
+.services {
+  .inner {
+    border-radius: 15px;
+  }
+  .inner i {
+    border: 7px solid var(--color-blue);
+    padding: 20px;
+    border-radius: 50%;
+    transition: 300ms;
+  }
+  .inner i:hover {
+    background-color: var(--color-blue);
+    color: white;
+  }
+}
+
+.numbers {
+  background-image: linear-gradient(#4c9ef2a8, #4c9ef2a8),
+    url("../image/post-3.jpg");
+  background-position: center;
+  background-size: contain;
+  background-attachment: fixed;
+  i {
+    border: 7px solid #cde1f8;
+    padding: 20px;
+    border-radius: 50%;
+  }
+}
+.portfolio {
+  background-color: #f5f5f5;
+  .img-inner {
+    overflow: hidden;
+  }
+  .img-inner img {
+    transition: 300ms;
+  }
+  .img-inner img:hover {
+    scale: 1.2;
+  }
+  p {
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+  }
+  button {
+    border: 3px solid var(--color-blue);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  button:hover {
+    border: 3px solid var(--color-blue);
+    color: var(--color-blue);
+  }
+}
+.testimonial {
+  background-image: linear-gradient(#4c9ef2a8, #4c9ef2a8),
+    url("../image/overlay-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  img {
+    border-radius: 50%;
+  }
+  .carousel-indicators {
+    bottom: -35px;
+  }
+  .carousel-indicators [data-bs-target] {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+  }
+}
+.blog {
+  background-color: #f5f5f5;
+  .layer {
+    top: 50%;
+    right: 44%;
+    border-radius: 5px;
+    font-size: 0.7rem;
+  }
+  .container {
+    .row {
+      .col-lg-4 {
+        .card {
+          ul {
+            background-color: #f8f8f8;
+            li {
+              .text {
+                img {
+                  width: 30px;
+                  height: 30px;
+                  border-radius: 50%;
+                }
+                p {
+                  transition: 300ms;
+                }
+                p:hover {
+                  color: var(--color-blue);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .list-group-item {
+    background-color: #f8f8f8;
+  }
+  .card-body {
+    .card-title {
+      transition: 300ms;
+    }
+    .card-title:hover {
+      color: var(--color-blue);
+    }
+  }
+}
+.contact {
+  background-image: linear-gradient(#4c9ef2a8, #4c9ef2a8),
+    url("../image/overlay-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  .form-control {
+    margin: 5px;
+    border-radius: 0;
+    padding: 9px;
+  }
+  button {
+    position: absolute;
+    left: 26%;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+  }
+  button:hover {
+    background-color: var(--color-blue);
+  }
+  ul li i {
+    border: 3px solid var(--color-blue);
+    padding: 7px;
+    border-radius: 50%;
+    transition: 300ms;
+  }
+  ul li i:hover {
+    background-color: var(--color-blue);
+    color: white;
+    border-color: #0077ff44;
+  }
+}
+.footer {
+  background-color: #0062d3;
+  p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
